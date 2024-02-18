@@ -1,0 +1,221 @@
+/* Profile wrapper */
+.profile-wrapper{
+
+}
+.profile-heading-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #EBEDED;
+    padding-bottom: 10px;
+}
+
+.profile-heading{
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+}
+.profile-close-btn{
+    filter: opacity(0.5);
+    cursor: pointer;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-close-btn:hover{
+    background: #b5c1bd78;
+    border-radius: 20px;
+    filter: opacity(1);
+}
+
+/* profile data skeleton */
+.profile-data-skeleton{
+    border: 1px solid #f0f3f5;
+    border-radius: 10px;
+    margin:10px 0
+}
+
+.profile-skeleton{
+    border-radius: 10px;
+    height: 100px;
+    margin: 10px;
+    animation: skeleton-loading 1s linear infinite alternate;
+}
+
+/* no profile data */
+.no-profile-data{
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+/* user data */
+.user-profile-data{
+    margin: 10px 0;
+    display: block;
+    border: 1px solid #EBEDED;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.user-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #EBEDED;
+
+    
+}
+.user-data:last-child {
+    border-bottom: none;
+}
+
+.user-data-label{
+    color: #c0c7db;
+    font-weight: 500;
+}
+
+.user-data-value{
+    font-size: 14px;
+    color: #000000;
+
+}
+
+/* preferred-main-wrapper */
+
+.preferred-main-wrapper{
+    display: block;
+    margin: 10px 0;
+}
+
+.categories-labels{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.categories-d{
+    font-size: 12px;
+    padding: 2px 6px;
+    color: #ffff;
+    background-color: #fe7678;
+    margin: 5px 3px;
+    border-radius: 5px;
+
+}
+
+
+.preferred-sources-wrapper{
+    /* color: gray; */
+}
+
+.preferred-sources-label{
+    color: #c0c7db;
+    font-size: 12px;
+}
+
+.sources-labels{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+
+}
+.source-d{
+    font-size: 12px;
+    padding: 2px 6px;
+    color: #ffff;
+    background-color: #fe7678;
+    margin: 5px 3px;
+    border-radius: 5px;
+}
+
+
+.update-profile-btn{
+    margin: 15px auto 5px auto;
+    width: 40%;
+}
+
+@media only screen and (max-width: 375px) {
+    .update-profile-btn{
+        width: 100%;
+    }
+}
+
+/* preferred authors css */
+.tags-input {
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    min-height: 48px;
+    /* width: 480px; */
+    padding: 0 8px;
+    border: 1px solid rgb(214, 216, 218);
+    border-radius: 6px;
+    /* &:focus-within {
+      border: 1px solid #0052cc;
+    } */
+}
+    .authors-input{
+      flex: 1;
+      border: none;
+      height: 46px;
+      font-size: 14px;
+      padding: 4px 0 0 0;
+      /* &:focus {
+        outline: transparent;
+      } */
+    }
+
+    #tags {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin: 8px 0 0 0;
+      }
+
+
+      .tag {
+        width: auto;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        padding: 0 8px;
+        /* font-size: 14px; */
+        list-style: none;
+        border-radius: 6px;
+        margin: 2px 2px;
+        background: #7eb2ff;
+      }
+        .tag-title {
+            text-transform: capitalize;
+          /* margin-top: 3px; */
+        }
+        .tag-close-icon {
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+            width: 16px;
+            height: 16px;
+            line-height: 16px;
+            text-align: center;
+            margin-left: 8px;
+            color: black;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+            @media screen and (max-width: 567px) {
+                .tags-input {
+                width: calc(100vw - 32px);
+                }
+            }

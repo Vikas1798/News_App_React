@@ -1,0 +1,36 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body{
+   /* font-family: system-ui; */
+   font-family: "Gill Sans", sans-serif;
+}
+
+/* scrollbar css */
+::-webkit-scrollbar {
+      width: 5px;
+      height: 2px;
+}
+::-webkit-scrollbar-track {
+   border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+      /* background: #f57c00; */
+      background: #EBEDED;
+      border-radius: 10px;
+}
+
+
+/* global skeleton loader */
+@keyframes skeleton-loading {
+   0% {
+       background-color: #a3b8c2;
+   }
+
+   100% {
+       background-color: #f0f3f5;
+   }
+}

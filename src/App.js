@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import NavbarComponent from "./Components/NavbarComponent/NavbarComponent";
+import InformationComponent from "./Components/InformationComponent/InformationComponent";
+import ToastifyComponent from './Components/ReusableComponent/Toastify';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () =>{
+    const [state, setState] = useState({
+        search:""
+    })
+
+    let handleSearch = (data) =>{
+        setState((prev)=>{
+            return{
+                ...prev,
+                search:data.target.value
+            }
+        })
+    }
+
+    return (
+        <main>
+            <NavbarComponent handleSearch={handleSearch} search={state?.search}/>
+            <InformationComponent search={state?.search}/>
+            <ToastifyComponent />
+
+        </main>
+    )
+
 }
 
 export default App;
+
+
